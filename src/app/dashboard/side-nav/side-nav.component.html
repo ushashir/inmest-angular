@@ -1,0 +1,29 @@
+<div class="sideNav">
+    <img class="logo" src="../../../assets/images/logo.jpg">
+   
+    <ul class="menu">
+        <li class="">
+            <a [routerLink]="['/']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+            </a>
+        <li>
+            <a [routerLink]="['/attendance']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>Attendance
+            </a>
+           
+        </li>
+        <li>
+            <a [routerLink]="['/leave']" [routerLinkActive]="'menuActive'">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>Leave
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/analytics']" [routerLinkActive]="'menuActive'">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>Analytics
+            </a>
+        <li>
+            <a [routerLink]="['/users']" [routerLinkActive]="'menuActive'">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>Users
+            </a>
+    </ul>
+</div>

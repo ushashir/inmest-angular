@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+
+.relative-pos{
+    position: relative;
+    background-color: black;
+    height: 1300px;
+    width: 300px;
+    left: 30px;
+    top: 30px;
+    color: white;
+}
+.absolute-pos{
+    position: absolute;
+    background-color: rgb(145, 145, 12);
+    bottom: 0px;
+    padding: 10px;
+    border-radius: 0 12px 0 0;
+}
+
+.fixed-pos{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(182, 115, 27);
+    padding: 20px;
+    color: white;
+    font-size: xx-large ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 72px 0px rgba(32,32,32,0.75);
+    font-weight: 800;
+}
+
+.sticky-pos{
+    position: sticky;
+    background: #0084ff;
+    background: linear-gradient(322deg,#0084ff 0%, #00ff8f 80%);
+    background: -webkit-linear-gradient(322deg,#0084ff 0%, #00ff8f 80%);
+    background: -moz-linear-gradient(322deg,#0084ff 0%, #00ff8f 80%);
+    top: 5px;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 10px;
+    z-index: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.sticky-pos > li{
+    margin-left: 10px;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wrapper .sideNav {
+    width: 250px;
+    background-color: white;
+    height: 100vh;
+    color: #29bbbb;
+}
+
+.wrapper .logo{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.wrapper .sideNav .menu{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.wrapper .sideNav .menu li{
+    font-weight: 500;   
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+}
+.wrapper .sideNav .menu li:hover{
+    background-color: #29bbbb;
+    color: white;
+    border-radius: 20px;
+}
+.wrapper .sideNav .menu .menuIcons{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.wrapper .sideNav .menu .menuActive{
+    background-color: #29bbbb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
