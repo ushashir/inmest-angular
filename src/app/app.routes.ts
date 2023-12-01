@@ -6,12 +6,23 @@ import { LeaveComponent } from './main-components/leave/leave.component';
 import { AnalyticsComponent } from './main-components/analytics/analytics.component';
 import { UsersComponent } from './main-components/users/users.component';
 import { UserDetailsComponetComponent } from './main-components/user-details-componet/user-details-componet.component';
+import { LoginComponent } from './auth/login/login.component';
 
 export const routes: Routes = [
-    {path:'',component:DashboardComponent},
-    {path:'attendance',component:AttendanceComponent},
-    {path:'leave',component:LeaveComponent},
-    {path:'analytics',component:AnalyticsComponent},
-    {path:'users',component:UsersComponent},
-    {path:'user-detail',component:UserDetailsComponetComponent},
+    { path: 'login', component: LoginComponent },
+  { 
+    path: '', 
+    component: LayoutComponent, 
+    children: [
+        { path: '', component: DashboardComponent },
+        { path: 'attendance', component: AttendanceComponent },
+        {path:'',component:DashboardComponent},
+        {path:'attendance',component:AttendanceComponent},
+        {path:'leave',component:LeaveComponent},
+        {path:'analytics',component:AnalyticsComponent},
+        {path:'users',component:UsersComponent},
+        {path:'user-detail',component:UserDetailsComponetComponent}
+    ]
+  }
+
 ];
