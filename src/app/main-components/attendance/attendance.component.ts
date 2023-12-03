@@ -12,7 +12,6 @@ import { RouterModule } from '@angular/router';
 })
 export class AttendanceComponent implements OnInit{
   attendance : any[]  = [];
-   //constructor injection
    constructor(
     private attendanceService: AttendanceService
   ){
