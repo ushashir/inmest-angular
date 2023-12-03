@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 20vw;
     background-color: #ffffff;
     height: 100vh;
-    color: #29bbbb;
+    color: #000000;
 }
 
 .wrapper .logo{
@@ -147,7 +147,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper .sideNav .menu{
     list-style: none;
-    padding-left: 20px;
+    padding-left: 50px;
+    text-align: center;
+    color: #000000;
+    padding-top: 40px;
 }
 
 .wrapper .sideNav .menu li{
@@ -157,10 +160,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     cursor: pointer;
     margin-bottom: 5px;
-
+    color: #000000;
+}
+.wrapper .sideNav .menu li a{
+    text-decoration: none;
+    color: #29bbbb;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper .sideNav .menu li a i{
+    margin: 5px 5px;
 }
 .wrapper .sideNav .menu li:hover{
-    background-color: #29bbbb;
+    border: 1px solid #29bbbb;
+    width: 80%;
     color: white;
     border-radius: 20px;
 }
@@ -170,9 +182,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .sideNav .menu .menuActive{
-    background-color: #29bbbb;
+    border: 1px solid #29bbbb;
+    width: 80%;
     color: white;
-    padding: 10px 20px;
     border-radius: 20px;
 }
 
