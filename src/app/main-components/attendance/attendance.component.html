@@ -36,16 +36,25 @@
         <tr *ngFor="let item of attendance;" >
             <td class="py-3 px-4">{{item.id}}</td>
             <td class="py-3">
-               <p style="border-radius: 40px;margin:0px;color:#000000;border: 0.5px solid rgba(0, 0, 0, 0.2);padding:5px 40px;width:fit-content">
-                {{item.eit_id}}<br/>
-                <span>
-                    <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                    <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                    <i class="fa fa-circle" aria-hidden="true" style="color: #000000;padding:5px;"></i>
-                </span>
-                <span style="float: right;">2 minutes</span>
+              <a style="text-decoration: none;" [routerLink]="['/leave']">
                 
-            </p> 
+               <button class="btn btn-link" style="display:flex;font-size: 0.82rem;border-radius: 40px;margin:0px;color:#000000;border: 0.5px solid rgba(0, 0, 0, 0.2);padding:5px 40px;width:fit-content;text-decoration: none;">
+                <div>
+                  <img src="../../../assets/images/profile.jpg" alt="profile" style="width: 50px;height:50px;object-fit: cover;border-radius:50px;margin-left:-25px;margin-right:12px">
+                </div>
+                <div style="text-decoration: none;">
+                  {{item.eit_id}}<br/>
+                  <span>
+                      <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:2px;"></i>
+                      <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:2px;"></i>
+                      <i class="fa fa-circle" aria-hidden="true" style="color: #000000;padding:2px;"></i>
+                  </span>
+                  <span style="float: right;">2 minutes</span>
+                </div>
+
+                
+              </button> 
+            </a>
             </td>
             <td class="py-3">{{item.reporting_time}}</td>
             <td class="py-3">
