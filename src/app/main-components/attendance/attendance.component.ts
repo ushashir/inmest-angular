@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AttendanceService } from '../../services/attendance.service';
 
 @Component({
   selector: 'app-attendance',
@@ -8,6 +9,22 @@ import { CommonModule } from '@angular/common';
   templateUrl: './attendance.component.html',
   styleUrl: './attendance.component.scss'
 })
-export class AttendanceComponent {
+export class AttendanceComponent implements OnInit{
+  attendance : any[]  = [];
+   //constructor injection
+   constructor(
+    private attendanceService: AttendanceService
+  ){
+    
+  }
+  ngOnInit(): void {
+    this.getAttendance()
+    console.log(this.attendance)
+  }
 
+  getAttendance(){
+    this.attendanceService.getAttendance().subscribe((resp:any)=>{
+       this.attendance = resp
+    })
+  }
 }
