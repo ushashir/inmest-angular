@@ -37,7 +37,7 @@
             <td class="py-3 px-4">{{item.id}}</td>
             <td class="py-3">
                <p style="border-radius: 40px;margin:0px;color:#000000;border: 0.5px solid rgba(0, 0, 0, 0.2);padding:5px 40px;width:fit-content">
-                {{item.eit_id}}<br/>
+                 <a [routerLink]="['/attendance-inner', item?.id]">{{item.eit_id}}</a> <br/>
                 <span>
                     <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
                     <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
