@@ -1,6 +1,6 @@
 import {
   ViewportRuler
-} from "./chunk-LJHQAIWT.js";
+} from "./chunk-7WQMYUYA.js";
 import {
   A11yModule,
   CdkMonitorFocus,
@@ -16,7 +16,6 @@ import {
   ObserversModule,
   Platform,
   SPACE,
-  animate,
   coerceBooleanProperty,
   coerceNumberProperty,
   hasModifierKey,
@@ -24,12 +23,15 @@ import {
   mixinDisableRipple,
   mixinDisabled,
   mixinTabIndex,
-  normalizePassiveListenerOptions,
+  normalizePassiveListenerOptions
+} from "./chunk-S7G35AOF.js";
+import {
+  animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-IHS72KCQ.js";
+} from "./chunk-7VJRIKEG.js";
 import "./chunk-OP7FDRTZ.js";
 import {
   CommonModule,

@@ -1,33 +1,45 @@
 import { Routes } from '@angular/router';
-import { UsersComponent } from './main-features/users/users.component';
-import { UserDetailComponent } from './main-features/user-detail/user-detail.component';
-import { NewUserComponent } from './main-features/new-user/new-user.component';
-import { AttendanceComponent } from './main-features/attendance/attendance.component';
-import { LeavesComponent } from './main-features/leaves/leaves.component';
-import { LeaveDetailComponent } from './main-features/leave-detail/leave-detail.component';
-import { AnalyticsComponent } from './main-features/analytics/analytics.component';
-import { SettingsComponent } from './main-features/settings/settings.component';
-import { HomeComponent } from './main-features/home/home.component';
-import { ItSupportComponent } from './main-features/it-support/it-support.component';
-import { AttendanceRegisterComponent } from './main-features/attendance-register/attendance-register.component';
-import { AttendanceInnerComponent } from './main-features/attendance-inner/attendance-inner.component';
+import { LayoutComponent } from './dashboard/layout/layout.component';
+import { DashboardComponent } from './main-components/dashboard/dashboard.component';
+import { AttendanceComponent } from './main-components/attendance/attendance.component';
+
+import { AnalyticsComponent } from './main-components/analytics/analytics.component';
+import { UsersComponent } from './main-components/users/users.component';
+
+import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './main-components/home/home.component';
+import { LeaveComponent } from './main-components/leave/leaves.component';
+import { UserDetailComponent } from './main-components/user-detail/user-detail.component';
+import { ItSupportComponent } from './main-components/it-support/it-support.component';
+import { NewUserComponent } from './main-components/new-user/new-user.component';
+import { AttendanceInnerComponent } from './main-components/attendance-inner/attendance-inner.component';
+import { SettingsComponent } from './main-components/settings/settings.component';
+import { SettingsUserComponent } from './main-components/settings-user/settings-user.component';
+import { LeaveDetailComponent } from './main-components/leave-detail/leave-detail.component';
+import { AttendanceRegisterComponent } from './main-components/attendance-register/attendance-register.component';
+
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'users', component: UsersComponent},
-    {path: 'new-user', component: NewUserComponent},
-    {path:'attendance',component:AttendanceComponent},
-    {path:'attendance-inner',component:AttendanceInnerComponent},
-    {path: 'leaves', component: LeavesComponent},
-    {path: 'leaves/:id/:name', component: LeaveDetailComponent},
-    {path: 'attendance-register', component: AttendanceRegisterComponent},
-    {path:'attendance-inner/:id',component:AttendanceInnerComponent},
-    {path: 'user-detail', component: UserDetailComponent},
-    {path : 'analytics', component: AnalyticsComponent},
-    {
-        path: 'settings',
-        component: SettingsComponent,
-      },
-  {path: 'it-support', component: ItSupportComponent}
+  { path: 'login', component: LoginComponent },
+  { 
+    path: '', 
+    component: LayoutComponent, 
+    children: [
+        { path: '', component: HomeComponent },
+        {path:'',component:DashboardComponent},
+        {path:'attendance',component:AttendanceComponent},
+        {path:'leave',component:LeaveComponent},
+        {path:'leave-details',component:LeaveDetailComponent},
+        {path:'analytics',component:AnalyticsComponent},
+        {path:'users',component:UsersComponent},
+        {path:'user-detail',component:UserDetailComponent},
+        {path: 'it-support', component: ItSupportComponent},
+        {path: 'new-user', component: NewUserComponent},
+        {path: 'attendance-in', component: AttendanceInnerComponent},
+        {path: 'attendance-register', component: AttendanceRegisterComponent},
+        {path: 'settings', component: SettingsComponent},
+        {path: 'settings-user', component: SettingsUserComponent},
+    ]
+  }
 
 ];

@@ -2916,7 +2916,7 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apexcharts@^3.44.0:
+apexcharts@3.44.1:
   version "3.44.1"
   resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.44.1.tgz#0d4ae8650dc12d3e75beb667dcc0dc1d4ff8c155"
   integrity sha512-nWd6bWf8E+c3YOsB0j0R4MOebMv1rBRWsK6aA11jF+pbag9IuBl4zrT4L42fxmDdLMcf5t3trWIXiGJmbLi2tA==
@@ -5538,13 +5538,6 @@ ng-apexcharts@^1.8.0:
   integrity sha512-NwJuMLHoLm52LSzM08RXV6oOOTyUYREAV53WHVGs+L2qi8UWbxCz19hX0kk+F/xFLEhhuiLegO3T1v30jLbKSQ==
   dependencies:
     tslib "^2.0.0"
-
-ngx-pagination@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/ngx-pagination/-/ngx-pagination-6.0.3.tgz#083f77a5c9c3ebf5800fb57a280da71aacc10a18"
-  integrity sha512-lONjTQ7hFPh1SyhwDrRd5ZwM4NMGQ7bNR6vLrs6mrU0Z8Q1zCcWbf/pvyp4DOlGyd9uyZxRy2wUsSZLeIPjbAw==
-  dependencies:
-    tslib "^2.3.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
