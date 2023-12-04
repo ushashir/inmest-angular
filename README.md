@@ -1,3 +1,14 @@
+# TEAM MEMBERS
+- Sly
+- Grace
+- Usha
+
+# Useful links
+- [Demo](https://656e47fd8ddc9a00723858ae--loquacious-caramel-2fc5f9.netlify.app/)
+- [GitHur](https://github.com/ushashir/inmest-angular)
+
+
+
 # InmestWeb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
